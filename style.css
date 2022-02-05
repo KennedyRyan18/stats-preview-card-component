@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Outfit&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Outfit&display=swap');
+    
 :root{
     --Very-dark-blue-main-background: hsl(233, 47%, 7%);
     --Dark-desaturated-blue-card-background: hsl(244, 38%, 16%);
@@ -13,114 +14,107 @@
 h1{
     color: var(--White-main-heading-stats);
 }
+
 p{
     color: var(--Slightly-transparent-white-main-paragraph);
 }
+
 html, body{
     width: 100%;
     height: 100%;
 }
 
 body{
-    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-content: center;
     align-items: center;
     background-color: var(--Very-dark-blue-main-background);
+}
+
+main{
+   margin: 15%; 
 }
 
 /*config card*/
 
 .card{
+    display: block;
     margin: auto;
     background-color: var(--Dark-desaturated-blue-card-background);
-    width: 950px;
-    height: 380px;
-    position: relative;
-    border-radius: 7px;
+    text-align: center;
+    width: 96%; /*width: 300px; */ 
+    border-radius: 10px;
+    padding-bottom: 5%;
+    box-sizing: border-box;
+}
+
+.card h1{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 1.5em;
 }
 
 .main-card{
-    position:relative;
-    width: 400px;
-    top: 50px;
-    left: 65px;
-}
-
-.img-card{
-    position: absolute;
-    left: 499px;
-    height: 380px;
-    width: 450px;
-    background-color: var(--Soft-violet-accent);
-    opacity: 0.9;
-    border-top-right-radius: 7px;
-    border-bottom-right-radius: 7px;
-}
-
-
-.image-header{
-    position: relative;
-    height: 379px;
-    width: 449px;
-    opacity: 0.6;
-    border-top-right-radius: 7px;
-    border-bottom-right-radius: 7px;
-}
-
-.main-card b{
-    color: var(--Soft-violet-accent);
+    display: block;
+    padding: 10%;
+    box-sizing: border-box;
 }
 
 .main-card h1{
-    font-family: 'Inter', sans-serif;
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 35px;
-    width: 400px;
+    margin-top: 6.66%;
+    font-size: 1.87em;
 }
 
 .main-card p{
-    width: 330px;
-    padding-top: 24px;
-    font-family: 'Inter', sans-serif;
-    line-height: 25px;
-    font-size: 0.8em;
-   
+    font-family: 'Lexend Deca', sans-serif;
+    margin: auto;
+    font-size: 1em;
+    padding-top: 8.33%;
+    line-height: 1.625em;
+    width: 87%;
 }
+
+.img-card img{
+    display: block;
+    max-width: 100%;
+    border-radius: 4% 4% 0 0;
+    opacity: .6;
+}
+
+picture{
+    display: block;
+    border-radius: 4% 4% 0 0;
+    background-color: var(--Soft-violet-accent);
+    background-size: 100%;
+}
+
+
+
+/*list*/
 
 .list-main{
-    position: relative;
-    width: 400px;
-    top: 90px;
-    left: 46px;
+    display: block;
+    margin: 0 auto;
 }
+
+.list li{
+    padding: 2%;
+    box-sizing: border-box;
+}
+
 
 .list p{
-    font-family: 'Inter', sans-serif;
-    font-size: 0.7em;
-    letter-spacing: 1px;
-    padding-top: 5px;
-    color: var(--Slightly-transparent-white-stat-headings);
+    padding: 3%;
+    letter-spacing: .125em;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.75em;
 }
 
-.list h1{
-    font-size: 1.3em;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    color: var(--White-main-heading-stats);
-}
-.list li{
-    display: inline-block;
-    padding: 20px;
-
-}
-
-.attribution{
-    position: relative;
-    top: 140px;
-}
 .attribution p{
     display: inline-block;
 }
+
+
+
+
