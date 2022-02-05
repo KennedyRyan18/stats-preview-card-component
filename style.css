@@ -79,6 +79,7 @@ main{
     display: block;
     max-width: 100%;
     border-radius: 4% 4% 0 0;
+    width: 100%;/* width: 345px; */
     opacity: .6;
 }
 
