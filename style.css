@@ -33,7 +33,7 @@ body{
 }
 
 main{
-   margin: 15%; 
+   margin: 40px; 
 }
 
 /*config card*/
@@ -43,7 +43,7 @@ main{
     margin: auto;
     background-color: var(--Dark-desaturated-blue-card-background);
     text-align: center;
-    width: 96%; /*width: 300px; */ 
+    width: 95%; /*width: 300px; */ 
     border-radius: 10px;
     padding-bottom: 5%;
     box-sizing: border-box;
@@ -75,17 +75,20 @@ main{
     width: 87%;
 }
 
+.main-card b{
+    color: var(--Soft-violet-accent);
+}
+
 .img-card img{
     display: block;
-    max-width: 100%;
-    border-radius: 4% 4% 0 0;
+    border-radius: 2% 2% 0 0;
     width: 100%;/* width: 345px; */
     opacity: .6;
 }
 
 picture{
     display: block;
-    border-radius: 4% 4% 0 0;
+    border-radius: 2% 2% 0 0;
     background-color: var(--Soft-violet-accent);
     background-size: 100%;
 }
@@ -96,11 +99,11 @@ picture{
 
 .list-main{
     display: block;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .list li{
-    padding: 2%;
+    padding: 4%;
     box-sizing: border-box;
 }
 
@@ -115,6 +118,118 @@ picture{
 .attribution p{
     display: inline-block;
 }
+
+@media screen and (min-width: 825px){
+
+    /* Ajustar imagem*/
+
+    main{
+        margin: auto;
+    }
+
+    .img-card{
+        display: block;
+        position: relative;
+        left: 480px;
+        max-width: 100%;
+        width: 464px;
+        /* width: 49.20%; */
+    
+    }
+
+    picture{
+        position: absolute;
+        border-top-left-radius: 0;
+        border-top-right-radius: 2.15%;
+        border-bottom-right-radius: 2.15%;
+    }
+
+    .img-card img{
+        border-top-left-radius: 0;
+        border-top-right-radius: 2.15%;
+        border-bottom-right-radius: 2.15%;
+    }
+
+    /*ajustar o card*/
+   
+    .card{
+        display: block;
+        position: relative;
+        margin: auto;
+        width: 100%;
+        min-width: 940px;
+        height: 100%;
+        min-height: 385px;
+        
+    }
+
+    .card h1{
+        position: relative;
+        margin: 0;
+        width: 50%;
+        /* width: 350px; */
+        text-align: left;
+    }
+
+    .card p{
+        position: relative;
+        margin: 0;
+        padding-top: 3%;
+        width: 45%;
+        /* width: 350px; */
+        text-align: left;
+    }
+
+    .main-card{
+        position: absolute;
+        bottom: 16%;
+        /* bottom: 55px; */
+        left: -20px;
+    }
+
+    .list-main{
+        margin: auto;
+        position: absolute;
+        bottom: 7%;
+        /* bottom: 25px; */
+    }
+
+    .list{
+        display: flex;
+    }
+
+    .list h1{
+        font-size: 1.4375em;
+        /* font-size: 23px; */
+    }
+
+    .list p{
+        padding-top: 8%;
+        font-size: .75em;
+    }
+
+    .list li{
+        position: relative;
+        left: 17.70%;
+        /* left: 69px; */
+        bottom: 20px;
+        /* bottom: 25px; */
+        padding: 0;
+        width: 130px;
+        /* width: 130px; */
+        box-sizing: border-box;
+        
+
+    }
+
+    
+
+
+   
+}
+
+
+
 
 
 
